@@ -1,11 +1,17 @@
 import CardInfo from "../../atoms/CardInfo";
-import {categories} from "../../../data"
+import categories from "../../../data/categories.json";
 
 function CardCategories(){
     return (
+        <section>
         {categories.map((categ) => (
-        <CardInfo image= {props.image}></CardInfo>)
-        )}
+        <CardInfo
+            className={categ.class}
+            key={categ.id}
+            image={categ.img}>
+         </CardInfo>
+         ))}
+        </section>
         
     )
 }

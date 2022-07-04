@@ -1,30 +1,30 @@
 [{
     "id": 0,
-    "image": "/assets/pokedex.png",
+    "img": "/assets/pokedex.png",
     "title": "Pokedex"
 },
 {
     "id": 1,
-    "image": "/assets/moves.png",
+    "img": "/assets/moves.png",
     "title": "Moves"
 },
 {
     "id": 2,
-    "image": "/assets/abilities.png",
+    "img": "/assets/abilities.png",
     "title": "Abilities"
 },
 {
     "id": 3,
-    "image": "/assets/items.png",
+    "img": "/assets/items.png",
     "title": "Items"
 },
 {
-    "id": 14,
-    "image": "/assets/locations.png",
+    "id": 4,
+    "img": "/assets/locations.png",
     "title": "Locations"
 },
 {
     "id": 5,
-    "image": "/assets/type.png",
+    "img": "/assets/type.png",
     "title": "Type Charts"
 }]
