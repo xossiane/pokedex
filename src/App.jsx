@@ -9,6 +9,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <CardInfo></CardInfo>
+        <CardInfo></CardInfo>
+        <CardInfo></CardInfo>
       </header>
     </div>
   )
