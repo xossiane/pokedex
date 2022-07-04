@@ -1,4 +1,4 @@
-const inputSearch = () => {
+const InputSearch = () => {
   return (
     <section>
       <input
@@ -9,4 +9,4 @@ const inputSearch = () => {
   );
 };
 
-export default inputSearch;
+export default InputSearch;

@@ -1,7 +1,7 @@
-import inputSearch from "../../moleculas/inputSearch";
+import InputSearch from "../../moleculas/InputSearch";
 
 const Home = () => {
-  return < inputSearch />
+  return < InputSearch />
 };
 
 export default Home;
