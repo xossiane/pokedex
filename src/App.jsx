@@ -1,11 +1,9 @@
+import "../public/styles/Global.css";
 
-
-
-import Home  from './components/pages/Home'
-import CardInfo from './components/atoms/CardInfo'
+import Home from "./components/pages/Home";
+import CardInfo from "./components/atoms/CardInfo";
 
 function App() {
-
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +13,7 @@ function App() {
         <CardInfo></CardInfo>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
