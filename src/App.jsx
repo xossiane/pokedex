@@ -1,6 +1,7 @@
 
 
-import './App.css'
+
+import Home  from './components/pages/Home'
 import CardInfo from './components/atoms/CardInfo'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Home />
         <CardInfo></CardInfo>
       </header>
     </div>
