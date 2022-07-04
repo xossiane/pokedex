@@ -1,6 +1,6 @@
 
 
-import './App.css'
+
 import CardInfo from './components/atoms/CardInfo'
 
 function App() {
@@ -8,6 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <CardInfo></CardInfo>
+        <CardInfo></CardInfo>
         <CardInfo></CardInfo>
       </header>
     </div>

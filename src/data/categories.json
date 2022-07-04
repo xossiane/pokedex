@@ -1,0 +1,30 @@
+[{
+    "id": 0,
+    "image": "/assets/pokedex.png",
+    "title": "Pokedex"
+},
+{
+    "id": 1,
+    "image": "/assets/moves.png",
+    "title": "Moves"
+},
+{
+    "id": 2,
+    "image": "/assets/abilities.png",
+    "title": "Abilities"
+},
+{
+    "id": 3,
+    "image": "/assets/items.png",
+    "title": "Items"
+},
+{
+    "id": 14,
+    "image": "/assets/locations.png",
+    "title": "Locations"
+},
+{
+    "id": 5,
+    "image": "/assets/type.png",
+    "title": "Type Charts"
+}]
