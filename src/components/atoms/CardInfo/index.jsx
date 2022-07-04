@@ -1,8 +1,10 @@
 import './CardInfo.scss'
-function CardInfo(){
+
+
+function CardInfo(props){
 return (
     <div className="CardInfo">
-        test 
+    <img className="cardInfo__image" src={props.image} alt="" />
     </div>
 
 )}

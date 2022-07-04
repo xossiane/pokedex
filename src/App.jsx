@@ -11,6 +11,8 @@ function App() {
       <header className="App-header">
         <Home />
         <CardInfo></CardInfo>
+        <CardInfo></CardInfo>
+        <CardInfo></CardInfo>
       </header>
     </div>
   )
