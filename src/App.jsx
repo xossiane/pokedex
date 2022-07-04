@@ -1,12 +1,15 @@
 import { useState } from 'react'
 
+import './App.css'
 
 function App() {
 
 
   return (
     <div className="App">
-     Hello
+      <header className="App-header">
+        <p> hi :)</p>
+      </header>
     </div>
   )
 }
