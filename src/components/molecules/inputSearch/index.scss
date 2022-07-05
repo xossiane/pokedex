@@ -1,13 +1,12 @@
-
+@import url("http://fonts.cdnfonts.com/css/circular-std");
 
 .searchSection {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 .searchSection__input {
   width: 324px;
   height: 45px;
@@ -31,4 +30,5 @@ img {
   margin-top: 117px;
   font-size: 1.87rem;
   margin-bottom: 40px;
+  font-family: 'Circular Std', sans-serif;
 }
