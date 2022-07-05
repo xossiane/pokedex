@@ -1,5 +1,9 @@
-
-.CardCategories_homepage{
+.App {
   display: flex;
-  margin: auto;
+  position: relative;
+  
+}
+.CardCategories__homepage{
+  display: flex;
+  justify-content: center;
 }
