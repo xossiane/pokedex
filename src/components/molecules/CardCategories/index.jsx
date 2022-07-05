@@ -15,6 +15,6 @@ function CardCategories(){
          ))}
         </div>
         
-    )
+    );
 }
 export default CardCategories;
