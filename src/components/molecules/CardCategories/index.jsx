@@ -5,7 +5,7 @@ import './CardCategories.scss'
 
 function CardCategories(){
     return (
-        <div className="CardCategories__homepage__content">
+        <div className="CardCategories__homepage__content"> 
         {categories.map((categ) => (
         <CardInfo
             className={`${`CardCategories__homepage__content`} ${categ.class}`}
