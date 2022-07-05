@@ -1,7 +1,14 @@
-import InputSearch from "../../moleculas/InputSearch";
+import InputSearch from "../../molecules/inputSearch";
+import logo from "../../../../public/assets/logo.png";
+import "./index.scss";
 
 const Home = () => {
-  return < InputSearch />
+  return (
+    <section className="homePage">
+      <img src={logo} className="homePage__logo" />
+      <InputSearch />
+    </section>
+  );
 };
 
 export default Home;

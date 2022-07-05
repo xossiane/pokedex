@@ -5,14 +5,16 @@ import CardInfo from "./components/atoms/CardInfo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Home />
-        <CardInfo></CardInfo>
-        <CardInfo></CardInfo>
-        <CardInfo></CardInfo>
-      </header>
-    </div>
+    <>
+      <Home />
+      <div className="App">
+        <header className="App-header">
+          <CardInfo></CardInfo>
+          <CardInfo></CardInfo>
+          <CardInfo></CardInfo>
+        </header>
+      </div>
+    </>
   );
 }
 
