@@ -25,6 +25,7 @@ const Home = () => {
       <div className="homePage__pokemonCardContainer">
         <PokeCard />
       </div>
+<<<<<<< HEAD
       <div className="CardCategories__homepage__footer">
     <div className="CardCategories__homepage">
     <CardCategories></CardCategories>
@@ -36,6 +37,9 @@ const Home = () => {
     
     </section>
     
+=======
+    </section>
+>>>>>>> main
   );
 };
 
