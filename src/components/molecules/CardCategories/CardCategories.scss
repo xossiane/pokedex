@@ -1,12 +1,19 @@
+@use '/public/styles/variables' as *;
+
 .CardCategories__homepage__content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: auto;
-    
-}
-
-.CardCategories__homepage__content__desktop{
-    display: none;
-    
-}
-  
+    @media screen {
+        @media (min-width: $tablet){
+        display: none;
+        
+    }
+    }
+    &__desktop{
+        display: none; 
+        @media screen { 
+        @media (min-width: $tablet) {
+        display: block;
+        
+        }}}};

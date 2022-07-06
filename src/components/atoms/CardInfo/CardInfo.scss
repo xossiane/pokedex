@@ -1,7 +1,13 @@
+@use '/public/styles/variables' as *;
 .cardInfo{
     display: flex;
     &__image{
         display: flex;
         position: relative;
+    @media screen {
+        @media (min-width: $tablet) {
+            margin: 20px;
+            
+        }
     }
-}
+}};

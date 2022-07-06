@@ -1,4 +1,7 @@
+@use '/public/styles/variables' as *;
+
 @import url("http://fonts.cdnfonts.com/css/circular-std");
+
 
 .searchSection {
     width: 100%;
@@ -6,7 +9,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    &__title {
+      width: 316px;
+      margin-top: 117px;
+      font-size: 1.87rem;
+      margin-bottom: 40px;
+      font-family: 'Circular Std', sans-serif;
+      @media screen {
+        @media (min-width:$tablet){
+          justify-content: center;
+          width: 500px;
+          height: 150px;
+          display: flex;
+      }
+          
+        }
+      }
   }
+
+
 .searchSection__input {
   width: 324px;
   height: 45px;
@@ -20,15 +41,13 @@
   background-position: 15px;
   margin-bottom: 42px;
   padding-left: 54px;
-}
+  @media screen {
+    @media (min-width:$tablet){
+      width: 673px;
+    }
+  }};
+  
 img {
   position: absolute;
 }
 
-.searchSection__title {
-  width: 316px;
-  margin-top: 117px;
-  font-size: 1.87rem;
-  margin-bottom: 40px;
-  font-family: 'Circular Std', sans-serif;
-}
