@@ -1,4 +1,4 @@
-import "../public/styles/Global.css";
+import "../public/styles/_variables.scss";
 import './App.css'
 import Home from "./components/pages/Home";
 

@@ -1,8 +1,7 @@
-.cardInfo__image{
-    display: flex;
-    position: relative;
-}
-
 .cardInfo{
     display: flex;
+    &__image{
+        display: flex;
+        position: relative;
+    }
 }
