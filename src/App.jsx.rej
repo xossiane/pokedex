@@ -1,0 +1,9 @@
+diff a/src/App.jsx b/src/App.jsx	(rejected hunks)
+@@ -5,7 +5,6 @@
+ function App() {
+   return (
+     <><Home /></>
+-  )
+   );
+    
+ };

@@ -1,0 +1,37 @@
+.homePage {
+    width: 100%;
+    position: relative;
+}
+
+.homePage__logo {
+    position: absolute;
+    right: 0;
+}
+
+.CardCategories__homepage{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  
+.CardCategories__homepage__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0px;
+    
+  }
+  .CardCategories__image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 710px;
+    
+    
+  }
+  
+.footer{
+    display: flex;
+    width: 50%;
+  }

@@ -1,7 +1,8 @@
-.CardInfo {
-    width: 155px;
-    height: 80px;
-    background-color: antiquewhite;
-    margin: auto;
-    border-radius: 15px;
+.cardInfo__image{
+    display: flex;
+    position: relative;
+}
+
+.cardInfo{
+    display: flex;
 }
