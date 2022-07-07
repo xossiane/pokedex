@@ -4,7 +4,6 @@ const PokeCard = ({id, name, img, type}) => {
     return (
        <div className="cardPoke">
          < img src={img} />
-        
          <h2 className="cardPoke__title">Charmander</h2>
          <h2 className="cardPoke__tag">Fire</h2>
          <h2 className="cardPoke__id">#002</h2>
