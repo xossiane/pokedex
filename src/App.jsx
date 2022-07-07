@@ -1,4 +1,4 @@
-import { Route, Redirect } from "react-router-dom";
+import { Route, Redirect, Switch} from "react-router-dom";
 
 
 import "./App.css";
@@ -10,6 +10,7 @@ import List from "./components/pages/List";
 function App() {
   return (
     <>
+    <Switch>
       <Route exact path={"/"}>
        < Home />
       </Route>
@@ -17,6 +18,7 @@ function App() {
       <Route path="/list">
         <List />
       </Route>
+      </Switch>
     </>
   );
 }
