@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-
+import '../../molecules/pokemonCard/pokemonCard.scss'
 import PokeCard from "../../molecules/pokemonCard";
 
 const List = () => {
@@ -13,11 +13,11 @@ const List = () => {
   }, []);
      
   return (
-    <h1>
+    <><PokeCard></PokeCard><h1>
       {pokemons.map((el) => (
         <li>{el.name}</li>
       ))}
-    </h1>
+    </h1></>
   );
 };
 
