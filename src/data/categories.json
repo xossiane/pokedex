@@ -1,6 +1,7 @@
 [{
     "id": 0,
     "img": "/assets/pokedex.png",
+    "img2":"/assets/pokedexdesktop.png",
     "title": "Pokedex",
     "class": "cardInfo__image"
     
@@ -8,30 +9,35 @@
 {
     "id": 1,
     "img": "/assets/moves.png",
+    "img2":"/assets/movesdesktop.png",
     "title": "Moves",
     "class": "cardInfo__image"
 },
 {
     "id": 2,
     "img": "/assets/abilities.png",
+    "img2": "/assets/abilitiesdesktop.png",
     "title": "Abilities",
     "class": "cardInfo__image"
 },
 {
     "id": 3,
     "img": "/assets/items.png",
+    "img2": "/assets/itemsdesktop.png",
     "title": "Items",
     "class": "cardInfo__image"
 },
 {
     "id": 4,
     "img": "/assets/location.png",
+    "img2": "/assets/locationsdesktop.png",
     "title": "Locations",
     "class": "cardInfo__image"
 },
 {
     "id": 5,
     "img": "/assets/type.png",
+    "img2": "/assets/typedesktop.png",
     "title": "Type Charts",
     "class": "cardInfo__image"
 }]

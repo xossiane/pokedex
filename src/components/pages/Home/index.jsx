@@ -1,6 +1,8 @@
 import InputSearch from "../../molecules/inputSearch";
 import logo from "../../../../public/assets/logo.png";
-
+import pikachu1 from "../../../../public/assets/pikachu1.png";
+import pikachu2 from "../../../../public/assets/pikachu2.png";
+import PokeCard from "../../molecules/pokemonCard";
 import "./Home.scss";
 import CardCategories from "../../molecules/CardCategories";
 import "../../molecules/CardCategories/CardCategories.scss";
@@ -9,6 +11,8 @@ const Home = () => {
   return (
     <section className="homePage">
       <img src={logo} className="homePage__logo" />
+      <img src={pikachu1} className="homePage__pikachu1" />
+      <img src={pikachu2} className="homePage__pikachu2" />
       <InputSearch />
 
       <div className="CardCategories__homepage__footer">

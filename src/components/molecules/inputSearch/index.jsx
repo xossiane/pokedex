@@ -1,11 +1,12 @@
 import "./index.scss";
 
 const InputSearch = () => {
+  
   return (
     <section className="searchSection">
       <div className="searchSection__title">
         <h1>
-          What Pokemon  <br /> are you looking for
+          What Pokemon  <br /> are you looking for?
         </h1>
       </div>
       <input
