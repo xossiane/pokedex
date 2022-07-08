@@ -13,11 +13,11 @@ const List = () => {
   }, []);
      
   return (
-    <><PokeCard></PokeCard><h1>
+    <><PokeCard></PokeCard><div>
       {pokemons.map((el) => (
         <li>{el.name}</li>
       ))}
-    </h1></>
+    </div></>
   );
 };
 
