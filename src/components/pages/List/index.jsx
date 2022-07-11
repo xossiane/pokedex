@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import '../../molecules/pokemonCard/pokemonCard.scss'
 import { pokemonList } from "../../../services/pokemonList";
 
 import PokeCard from "../../molecules/pokemonCard";
@@ -6,7 +7,7 @@ import PokeCard from "../../molecules/pokemonCard";
 const List = () => {
   const [pokemons, setPokemons] = useState([]);
 
-  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/?limit=100");
+  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/?limit=2");
 
   // console.log(pokemons);
 
@@ -42,11 +43,15 @@ const List = () => {
   }, []);
 
   return (
-    <h1>
-      {pokemons.map((el) => (
-        <PokeCard name={el.name} type={el.types[0].type.name}/>
+      <>{pokemons.map((el) => (
+        <PokeCard 
+        name={el.name} 
+        type={el.types[0].type.name} 
+        img={el.sprites.other.dream_world.front_default}
+        id={el.id}
+        />
       ))}
-    </h1>  
+      </>
   );
 };
 
