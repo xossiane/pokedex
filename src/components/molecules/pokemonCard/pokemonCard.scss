@@ -1,57 +1,72 @@
 @use '/public/styles/variables' as *;
 
-.cardPoke{
+.pokeCard{
     width: 155px;
     height: 110px;
     background-color: $red;
     border-radius: 15px;
     position: relative;
-    &__id{
-        margin-top: 10px;
-        margin-left: 105px;
-        margin-bottom: 87px;
-        position: absolute;
-        font-family: $font;
-        font-size: 14px;
-        opacity: 0.2;
-
-    }
-    &__title{
-        position: absolute;
-        color: $white;
-        font-family: $font;
-        font-size: 15px;
-        margin-top: 26px;
-        margin-left: 16px;
-        margin-right: 54px;
-        line-height: 14px;}
-    &__tag{
-        position: absolute;
-        margin-top: 59px;
-        margin-left: 16px;
-        margin-right: 96px;
-        height: 16px;
-        width: 43px;
-        box-sizing: border-box;
-        border-radius: 38px;
-        background-color: white;
-        opacity: 0.4;
-        font-family: $font;
-        font-size: 8px;
-        color: black;
-        text-align: center;
-        line-height: 16px;
-        &__logo{
-            position: relative;
-            top:40px;
-            right:-86px;
-            opacity: 0.6;
+    &__type{
+        &__id{
+            margin-top: 10px;
+            margin-left: 105px;
+            margin-bottom: 87px;
+            position: absolute;
+            font-family: $font;
+            font-size: 14px;
+            opacity: 0.2;
         }
-        &__img{
-            margin-top: 36px;
-        }
-        
-    
-
-    
+        &__title{
+            position: absolute;
+            color: $white;
+            font-family: $font;
+            font-size: 15px;
+            margin-top: 26px;
+            margin-left: 16px;
+            margin-right: 54px;
+            line-height: 14px;}
+        &__tag{
+            position: absolute;
+            margin-top: 59px;
+            margin-left: 16px;
+            margin-right: 96px;
+            height: 16px;
+            width: 43px;
+            box-sizing: border-box;
+            border-radius: 38px;
+            background-color: white;
+            opacity: 0.4;
+            font-family: $font;
+            font-size: 8px;
+            color: black;
+            text-align: center;
+            line-height: 16px;
+            &__logo{
+                position: relative;
+                top:40px;
+                right:-86px;
+                opacity: 0.6;
+            }
+            &__img{
+                margin-top: 36px;
+            }}
+           
     }}
+    .pokeCard__type__fire{
+        background-color: black;
+        width: 155px;
+        height: 110px;
+        border-radius: 15px;
+    }
+    .pokeCard__type__water{
+        background-color: blue;
+        width: 155px;
+        height: 110px;
+        border-radius: 15px;
+    }
+    .pokeCard__type__electric{
+        background-color: yellow;
+    }
+    .pokeCard__type__grass{
+        background-color: green;
+    }

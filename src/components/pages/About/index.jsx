@@ -1,6 +1,11 @@
-function About(){
-return (
-    <p>Hey</p>
-)
-}
-export default About;
+import About from "../../molecules/About";
+
+function AboutPage(){
+    
+    return(
+    
+        <About />
+        
+    );
+};
+export default AboutPage;
