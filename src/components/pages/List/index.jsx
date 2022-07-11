@@ -6,7 +6,7 @@ import PokeCard from "../../molecules/pokemonCard";
 const List = () => {
   const [pokemons, setPokemons] = useState([]);
 
-  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/?limit=100");
+  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/?limit=2");
 
   // console.log(pokemons);
 
@@ -45,9 +45,9 @@ const List = () => {
     <h1>
       {pokemons.map((el) => (
         <PokeCard name={el.name} type={el.types[0].type.name}/>
-      ))}
+      ))} 
     </h1>  
   );
 };
-
+   
 export default List;
