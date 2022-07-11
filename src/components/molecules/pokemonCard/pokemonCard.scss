@@ -1,12 +1,13 @@
 @use '/public/styles/variables' as *;
 
-.pokeCard{
+.pokeCard__type{
     width: 155px;
     height: 110px;
-    background-color: $red;
     border-radius: 15px;
     position: relative;
-    &__type{
+        &__fire{
+            background-color: $fire;
+        }
         &__id{
             margin-top: 10px;
             margin-left: 105px;
@@ -48,21 +49,26 @@
                 opacity: 0.6;
             }
             &__img{
-                margin-top: 36px;
+                width: 73px;
+                height: 68px;
             }}
            
-    }}
-    .pokeCard__type__fire{
-        background-color: $red;
+    }
+
+    // .pokeCard__type__fire{
+    //     background-color: $fire;
         
-    }
-    .pokeCard__type__water{
-        background-color: blue;
+    // }
+    // .pokeCard__type__water{
+    //     background-color: $water;
         
-    }
-    .pokeCard__type__electric{
-        background-color: yellow;
-    }
-    .pokeCard__type__grass{
-        background-color: green;
-    }
+    // }
+    // .pokeCard__type__electric{
+    //     background-color: $electric;
+    // }
+    // .pokeCard__type__grass{
+    //     background-color: $grass;
+    // }
+    // .pokeCard__type__bug{
+    //     background-color: $bug;
+    // }

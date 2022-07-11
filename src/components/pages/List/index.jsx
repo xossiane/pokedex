@@ -7,7 +7,7 @@ import PokeCard from "../../molecules/pokemonCard";
 const List = () => {
   const [pokemons, setPokemons] = useState([]);
 
-  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/?limit=2");
+  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/?limit=151");
 
   // console.log(pokemons);
 
