@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./inputSearch.scss";
 
 const InputSearch = () => {
   

@@ -1,0 +1,108 @@
+@use '/public/styles/variables' as *;
+
+.pokeCard__type{
+    width: 155px;
+    height: 110px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+        &__fire{
+            background-color: $fire;
+        }
+        &__water{
+            background-color: $water;
+        }
+        &__electric{
+            background-color: $electric;
+        }
+        &__grass{
+            background-color: $grass;
+        }
+        &__bug{
+            background-color: $bug;
+        }
+        &__normal{
+            background-color: $normal;
+        }
+        &__poison{
+            background-color: $poison;
+        }
+        &__ground{
+            background-color: $ground;
+        }
+        &__fairy{
+            background-color: $fairy;
+        }
+        &__fighting{
+            background-color: $fighting;
+        }
+        &__psychic{
+            background-color: $psychic;
+        }
+        &__rock{
+            background-color: $rock;
+        }
+        &__ghost{
+            background-color: $ghost;
+        }
+        &__ice{
+            background-color: $ice;
+        }
+        &__dragon{
+            background-color: $dragon;
+        }
+        &__id{
+            margin-top: 10px;
+            margin-left: 105px;
+            margin-bottom: 87px;
+            position: absolute;
+            font-family: $font;
+            font-size: 14px;
+            opacity: 0.2;
+        }
+        &__title{
+            position: absolute;
+            color: $white;
+            font-family: $font;
+            font-size: 15px;
+            margin-top: 26px;
+            margin-left: 16px;
+            margin-right: 54px;
+            line-height: 14px;}
+        &__tag{
+            position: absolute;
+            margin-top: 59px;
+            margin-left: 16px;
+            margin-right: 96px;
+            height: 16px;
+            width: 43px;
+            box-sizing: border-box;
+            border-radius: 38px;
+            background-color: white;
+            opacity: 0.4;
+            font-family: $font;
+            font-size: 8px;
+            color: black;
+            text-align: center;
+            line-height: 16px;
+            &__logo{
+                position: relative;
+                top:40px;
+                right:-86px;
+                opacity: 0.6;
+            }
+            &__img{
+                width: 73px;
+                height: 68px;
+                margin-top: 34px;
+                margin-left: -3px;
+            }}
+           
+    }
+
+    .PokeCard{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 68%;
+    }

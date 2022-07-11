@@ -3,6 +3,8 @@ import logo from "../../../../public/assets/logo.png";
 import pikachu1 from "../../../../public/assets/pikachu1.png";
 import pikachu2 from "../../../../public/assets/pikachu2.png";
 import PokeCard from "../../molecules/pokemonCard";
+import { Link } from "react-router-dom";
+
 import "./Home.scss";
 import CardCategories from "../../molecules/CardCategories";
 import "../../molecules/CardCategories/CardCategories.scss";
@@ -17,7 +19,9 @@ const Home = () => {
 
       <div className="CardCategories__homepage__footer">
         <div className="CardCategories__homepage">
+          <Link className="CardCategories__homepage__link" to="/List">
           <CardCategories></CardCategories>
+          </Link>
         </div>
         <div className="CardCategories__image">
           <img className="footer" src="/assets/footer.jpg" />
