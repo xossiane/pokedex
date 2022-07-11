@@ -1,9 +1,11 @@
 @use '/public/styles/variables' as *;
 
-.PokeCard{
+.PokeList__Title{
+    width: 316px;
+    margin-top: 117px;
+    font-size: 1.87rem;
+    margin-bottom: 40px;
+    font-family: $font;
     
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 68%;
 
 }
