@@ -5,6 +5,8 @@
     height: 110px;
     border-radius: 15px;
     position: relative;
+    margin-bottom: 15px;
+    display: flex;
         &__fire{
             background-color: $fire;
         }
@@ -93,6 +95,8 @@
             &__img{
                 width: 73px;
                 height: 68px;
+                margin-top: 34px;
+                margin-left: -3px;
             }}
            
     }
