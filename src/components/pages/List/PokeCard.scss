@@ -1,0 +1,9 @@
+@use '/public/styles/variables' as *;
+
+.PokeCard{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 68%;
+
+}

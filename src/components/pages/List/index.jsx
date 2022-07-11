@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import '../../molecules/pokemonCard/pokemonCard.scss'
 import { pokemonList } from "../../../services/pokemonList";
-
+import './PokeCard.scss'
 import PokeCard from "../../molecules/pokemonCard";
 
 const List = () => {
@@ -43,15 +43,19 @@ const List = () => {
   }, []);
 
   return (
+    <div className="PokeCard">
       <>{pokemons.map((el) => (
         <PokeCard 
+        
         name={el.name} 
         type={el.types[0].type.name} 
         img={el.sprites.other.dream_world.front_default}
         id={el.id}
         />
       ))}
+      
       </>
+      </div>
   );
 };
 
