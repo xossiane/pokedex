@@ -1,7 +1,7 @@
 import pokecardlogo from "../../../../public/assets/pokecardlogo.png"
 import charmander from "../../../../public/assets/charmander.png"
 const PokeCard = ({id, name, img, type}) => {
-  const style = `pokeCard__type__${type}`
+  const style = `pokeCard__type__${type} pokeCard__type` 
     return (
        <div className={style}>
          {/* < img src={img} /> */}
