@@ -1,6 +1,6 @@
 function About(){
     return (
-        <p>hello</p>
+     <p>hello</p>
     )
     }
     export default About;

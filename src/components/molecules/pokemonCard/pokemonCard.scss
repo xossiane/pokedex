@@ -53,16 +53,12 @@
            
     }}
     .pokeCard__type__fire{
-        background-color: black;
-        width: 155px;
-        height: 110px;
-        border-radius: 15px;
+        background-color: $red;
+        
     }
     .pokeCard__type__water{
         background-color: blue;
-        width: 155px;
-        height: 110px;
-        border-radius: 15px;
+        
     }
     .pokeCard__type__electric{
         background-color: yellow;
