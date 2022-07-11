@@ -101,20 +101,8 @@
            
     }
 
-    // .pokeCard__type__fire{
-    //     background-color: $fire;
-        
-    // }
-    // .pokeCard__type__water{
-    //     background-color: $water;
-        
-    // }
-    // .pokeCard__type__electric{
-    //     background-color: $electric;
-    // }
-    // .pokeCard__type__grass{
-    //     background-color: $grass;
-    // }
-    // .pokeCard__type__bug{
-    //     background-color: $bug;
-    // }
+    .PokeCard{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 68%;
+    }

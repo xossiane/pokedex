@@ -1,5 +1,6 @@
 import pokecardlogo from "../../../../public/assets/pokecardlogo.png"
-import charmander from "../../../../public/assets/charmander.png"
+import './pokemonCard.scss'
+
 const PokeCard = ({id, name, img, type}) => {
   const style = `pokeCard__type__${type} pokeCard__type` 
     return (
