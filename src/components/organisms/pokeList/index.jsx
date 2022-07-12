@@ -48,7 +48,8 @@ const PokeList = () => {
         <PokeCard 
         
         name={el.name} 
-        type={el.types[0].type.name} 
+        type={el.types} 
+        // type2={el.types[1].type.name}
         img={el.sprites.other.dream_world.front_default}
         id={el.id}
         />

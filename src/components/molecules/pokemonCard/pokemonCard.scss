@@ -106,4 +106,14 @@
         grid-template-columns: repeat(2, 1fr);
         width: 68%;
         margin: auto;
-    }
+        @media screen {
+            @media (min-width:$tablet){
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 600px;
+                
+            }
+            @media (min-width:$desktop){
+                grid-template-columns: repeat(4, 1fr);
+                max-width: 800px;
+            }
+    }}

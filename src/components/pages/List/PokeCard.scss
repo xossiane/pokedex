@@ -21,11 +21,11 @@
         top: 55px;
 
         
+    }
+    &__logo{
+        display: flex;
+        top: 0;
+        right: 0;
+        position: absolute;
     }}
 
-.PokeList__logo{
-    display: flex;
-    top: 0;
-    right: 0;
-    position: absolute;
-}
