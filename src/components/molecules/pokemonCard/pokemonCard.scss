@@ -71,21 +71,55 @@
             margin-right: 54px;
             line-height: 14px;}
         &__tag{
-            position: absolute;
-            margin-top: 59px;
-            margin-left: 16px;
-            margin-right: 96px;
-            height: 16px;
-            width: 43px;
-            box-sizing: border-box;
-            border-radius: 38px;
-            background-color: white;
-            opacity: 0.4;
-            font-family: $font;
-            font-size: 8px;
-            color: black;
-            text-align: center;
-            line-height: 16px;
+            &--0{
+                position: absolute;
+                margin-top: 49px;
+                margin-left: 16px;
+                margin-right: 96px;
+                height: 16px;
+                width: 43px;
+                box-sizing: border-box;
+                border-radius: 38px;
+                background-color: white;
+                opacity: 0.4;
+                font-family: $font;
+                font-size: 8px;
+                color: black;
+                text-align: center;
+                line-height: 16px;
+            }
+            &--1{
+                position: absolute;
+                margin-top: 70px;
+                margin-left: 16px;
+                margin-right: 96px;
+                height: 16px;
+                width: 43px;
+                box-sizing: border-box;
+                border-radius: 38px;
+                background-color: white;
+                opacity: 0.4;
+                font-family: $font;
+                font-size: 8px;
+                color: black;
+                text-align: center;
+                line-height: 16px;
+            }
+            // position: absolute;
+            // margin-top: 59px;
+            // margin-left: 16px;
+            // margin-right: 96px;
+            // height: 16px;
+            // width: 43px;
+            // box-sizing: border-box;
+            // border-radius: 38px;
+            // background-color: white;
+            // opacity: 0.4;
+            // font-family: $font;
+            // font-size: 8px;
+            // color: black;
+            // text-align: center;
+            // line-height: 16px;
             &__logo{
                 position: relative;
                 top:40px;
