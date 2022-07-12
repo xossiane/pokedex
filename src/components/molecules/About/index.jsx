@@ -1,6 +1,8 @@
+
+import './About.scss'
 function About(){
     return (
-    <div>
+    <div className="About__container">
      <p>hello</p>
      </div>
     )
