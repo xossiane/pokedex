@@ -2,4 +2,41 @@
 
 .About__container{
     background-color: $grass;
+    height: 812px;
+    width: 375px;
+    top:0px;
+}
+
+.About__container__info{
+    height:436px;
+    width: 375px;
+    top: 436px;
+    position: relative;
+    border-radius:  32px 32px 0 0;
+    background-color: $white;
+    display: flex;
+}
+
+.About__title{
+    font-family: $font;
+    color: $white;
+    font-weight: 600px;
+    margin-top: 104px;
+    margin-left: 26px;
+    font-size: 36px;
+    line-height: 45.54px;
+    position: absolute;
+}
+
+.About__id{
+    font-family: $font;
+    font-size: 18px;
+    line-height: 22.77px;
+    color: $white;
+    opacity: 0.85;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 26px;
+    top: 110px;
+    position: relative;
 }
