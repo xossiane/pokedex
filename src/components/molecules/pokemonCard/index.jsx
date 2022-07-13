@@ -1,5 +1,5 @@
 import pokecardlogo from "../../../../public/assets/pokecardlogo.png";
-import { pokemonList } from "../../../services/pokemonList";
+
 import "./pokemonCard.scss";
 
 const PokeCard = ({ id, name, img, type }) => {

@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import "../../molecules/pokemonCard/pokemonCard.scss";
-import { pokemonList } from "../../../services/pokemonList";
+import { fetchPokemon } from "../../../services/fetchPokemon";
+import { getPokemon } from "../../../services/getPokemon";
 import "./index.scss";
 
 import PokeCard from "../../molecules/pokemonCard";
@@ -8,8 +9,20 @@ import PokeCard from "../../molecules/pokemonCard";
 const PokeList = () => {
   const [pokemons, setPokemons] = useState([]);
 
+  const renderFetch = async () => {
+    const data = await fetchPokemon();
+
+    const pokemonList = await getPokemon(data.results);
+
+    setPokemons(pokemonList);
+  };
+
+  useEffect(() => {
+    renderFetch();
+  }, []);
+
   // console.log(pokemons);
-  const getPokemon = async (res) => {
+  /*   const getPokemon = async (res) => {
     const pokemonData = [];
     for (let k in res) {
       const result = await fetch(
@@ -33,7 +46,7 @@ const PokeList = () => {
   useEffect(() => {
 
     fetchPokemon();
-  }, [fetchPokemon]);
+  }, []);  */
 
   return (
     <div className="PokeCard">
