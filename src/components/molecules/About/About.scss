@@ -2,19 +2,23 @@
 
 .About__container{
     background-color: $grass;
-    height: 812px;
-    width: 375px;
-    top:0px;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .About__container__info{
-    height:436px;
-    width: 375px;
-    top: 436px;
-    position: relative;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    margin: auto;
+    bottom: 0;
     border-radius:  32px 32px 0 0;
     background-color: $white;
-    display: flex;
+   position: absolute;
 }
 
 .About__title{
@@ -26,6 +30,7 @@
     font-size: 36px;
     line-height: 45.54px;
     position: absolute;
+    display: flex;
 }
 
 .About__id{
@@ -39,4 +44,15 @@
     margin-right: 26px;
     top: 110px;
     position: relative;
+    
+}
+
+.About__img{
+    display: flex;
+    bottom: 3px;
+    z-index: 1;
+    position: absolute;
+    top: -170px;
+    left: 50%;
+    transform: translateX(-50%);
 }
