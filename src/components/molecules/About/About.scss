@@ -12,14 +12,42 @@
     &__tab{
         display: flex;
         align-items: flex-start;
-
+        justify-content: space-around;
+        margin-top: 20px;
+        min-width: 321px;
     }
+    
 }
+
+.About{
+    &__description{
+        font-family: $font;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 59px;
+        margin-left:29px;
+        margin-right: 29px;
+        font-weight: 10px;
+        text-align: justify;
+    }
+    &__metrics{
+        display: flex;
+        flex-direction: row;
+        &
+        &__title{
+            display: flex;
+            flex-direction: row;
+            &__number{
+                flex-direction: column;
+            }
+        }};
+    
+    };
 
 .About__container__info{
     height: 50vh;
     width: 100vw;
-    display: flex;
+   
     margin: auto;
     bottom: 0;
     border-radius:  32px 32px 0 0;
@@ -59,17 +87,9 @@
     position: absolute;
     top: -170px;
     left: 50%;
-    transform: translateX(-50%);
-    
-    
+    transform: translateX(-50%);   
 }
 
-.About__tag{
-    display: flex;
-    &__typeone{
-        display: none;
-    }
-}
 
 .AboutPage__back{
     display: flex;
@@ -93,6 +113,34 @@
 
 .Poketag{
     display: flex;
+     font-family: $font;
+    &--about{
+        font-family: $font;
+        padding: 10px;
+        font-size: 14px;
+    }
+    &--stats{
+        font-family: $font;
+        padding: 10px;
+        font-size: 14px;
+        display: flex;
+        opacity: 30%;
+
+    }
+    &--evolution{
+        font-family: $font;
+        padding: 10px;
+        font-size: 14px;
+        display: flex;
+        opacity: 30%;
+    }
+    &--moves{
+        font-family: $font;
+        padding: 10px;
+        font-size: 14px;
+        display: flex;
+        opacity: 30%;
+    }
     &__typeone{
         position: absolute;
         margin-top: 135px;

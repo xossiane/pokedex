@@ -25,11 +25,20 @@ function About(){
         <div className="About__container__info"> 
         <img className="About__img" src={Bulba}/>
         <div className="About__container__tab">
-        <PokeTag text={"About"} className="__about"></PokeTag>
-        <PokeTag text={"Base Stats"} className="__stats"></PokeTag>
-        <PokeTag text={"Evolution"} className="__evolution"></PokeTag>
-        <PokeTag text={"Moves"} className="__moves"></PokeTag>
+        <PokeTag text={"About"} className="--about"></PokeTag>
+        <PokeTag text={"Base Stats"} className="--stats"></PokeTag>
+        <PokeTag text={"Evolution"} className="--evolution"></PokeTag>
+        <PokeTag text={"Moves"} className="--moves"></PokeTag>
         </div>
+        <h2 className="About__description">Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger. </h2>
+        <div className="About__metrics__title">
+            <h2 className="About__metrics__title__height">Height</h2>
+            <h2 className="About__metrics__title__weight">Weight</h2>
+        </div>
+        <div className="About__metrics__number">
+            <h2 className="About__metrics__number">2'3.6" (0.70cm)</h2>
+            <h2 className="About__metrics__number">15.2lbs (6.9 kg)</h2>
+            </div>
         </div>
           
         </div>
