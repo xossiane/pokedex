@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import PokemonSearch from "../../../services/PokemonSearch";
 import PokeCard from "../../../components/molecules/pokemonCard";
 import "./inputSearch.scss";
@@ -29,11 +29,16 @@ const InputSearch = () => {
         onChange={(e) => setSearch(e.target.value)}
         onKeyPress={handleOnKeyPress}
       />
-      <div>{pokedata && < PokeCard   
-        name={pokedata.name} 
-        type={pokedata.types[0].type.name} 
-        img={pokedata.sprites.other.dream_world.front_default}
-        id={pokedata.id} />}</div> 
+      <div>
+        {pokedata && (
+          <PokeCard
+          name={pokedata.name}
+          type={pokedata.types}
+          img={pokedata.sprites.other.dream_world.front_default}
+          id={pokedata.id}
+        />
+        )}
+      </div>
     </section>
   );
 };

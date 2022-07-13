@@ -1,62 +1,53 @@
 import { useState, useEffect, useCallback } from "react";
-import '../../molecules/pokemonCard/pokemonCard.scss'
+import "../../molecules/pokemonCard/pokemonCard.scss";
 import { pokemonList } from "../../../services/pokemonList";
+import "./index.scss";
 
 import PokeCard from "../../molecules/pokemonCard";
 
 const PokeList = () => {
   const [pokemons, setPokemons] = useState([]);
 
-  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/?limit=151");
-
   // console.log(pokemons);
+  const getPokemon = async (res) => {
+    const pokemonData = [];
+    for (let k in res) {
+      const result = await fetch(
+        `https://pokeapi.co/api/v2/pokemon/${res[k].name}`
+      );
+      const dat = await result.json();
+      pokemonData.push(dat);
+    }
 
-  useEffect(() => {
-    const fetchPokemon = async () => {
-      const res = await fetch(url);
-      const response = await res.json();
-      // console.log(response.results);
-      getPokemon(response.results);
-    };
+  
+    setPokemons(pokemonData);
+    //console.log(pokemonData)
+  };
 
-    const getPokemon = async (res) => {
-      // const pokemonData = [];
-
-      res.forEach(async (item) => {
-        const result = await fetch(
-          `https://pokeapi.co/api/v2/pokemon/${item.name}`
-        );
-
-        const dat = await result.json();
-        // console.log(dat);
-        // pokemonData.push(dat);
-        setPokemons(prev => [...prev, dat])
-      });
-
-      console.log(pokemons)
-
-      // const names = [{ name: "kenji" }, { name: "josi" }];
-      // setPokemons(names);
-    };
-    
-    fetchPokemon();
+  const fetchPokemon = useCallback(async () => {
+    const res = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=151");
+    const response = await res.json();
+    //console.log(response.results);
+    getPokemon(response.results);
   }, []);
+  useEffect(() => {
+
+    fetchPokemon();
+  }, [fetchPokemon]);
 
   return (
     <div className="PokeCard">
-      <>{pokemons.map((el) => (
-        <PokeCard 
-        
-        name={el.name} 
-        type={el.types} 
-        // type2={el.types[1].type.name}
-        img={el.sprites.other.dream_world.front_default}
-        id={el.id}
-        />
-      ))}
-      
-      </>
-      </div>
+      {!!pokemons.length &&
+        pokemons.map((el) => (
+          <PokeCard
+            key={el.id}
+            name={el.name}
+            type={el.types}
+            img={el.sprites.other.dream_world.front_default}
+            id={el.id}
+          />
+        ))}
+    </div>
   );
 };
 
