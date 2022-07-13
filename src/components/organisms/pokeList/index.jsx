@@ -4,11 +4,11 @@ import { pokemonList } from "../../../services/pokemonList";
 
 import PokeCard from "../../molecules/pokemonCard";
 
-const PokeList = () => {
+const PokeList = ({pokemonslist}) => {
   const [pokemons, setPokemons] = useState([]);
 
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/?limit=151");
-
+  console.log('brincando com props', pokemonslist)
   // console.log(pokemons);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const PokeList = () => {
         setPokemons(prev => [...prev, dat])
       });
 
-      console.log(pokemons)
+      // console.log(pokemons)
 
       // const names = [{ name: "kenji" }, { name: "josi" }];
       // setPokemons(names);

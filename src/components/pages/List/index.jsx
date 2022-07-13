@@ -8,6 +8,8 @@ import pikachu2 from "../../../../public/assets/pikachu2.png"
 import { Link } from "react-router-dom"
 
 const List = () => {
+  
+
   return(
     <>
     <div className="PokeList">
