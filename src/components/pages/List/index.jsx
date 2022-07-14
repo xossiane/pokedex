@@ -8,6 +8,8 @@ import pikachu2 from "../../../../public/assets/pikachu2.png"
 import { Link } from "react-router-dom"
 
 const List = () => {
+  
+
   return(
     <>
     <div className="PokeList">
@@ -18,7 +20,7 @@ const List = () => {
     <img src={arrow} className="PokeList__arrow" />
     </Link>
     <img src={list} className="PokeList__list" />
-    <h1 className="PokeList__title"> Pokedex </h1>
+    <h2 className="PokeList__title"> Pokedex </h2>
     <div className="PokeList__cards">
     <PokeList />
     </div>

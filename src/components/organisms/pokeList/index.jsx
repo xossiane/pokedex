@@ -6,7 +6,7 @@ import "./index.scss";
 
 import PokeCard from "../../molecules/pokemonCard";
 
-const PokeList = () => {
+const PokeList = ({pokemonslist}) => {
   const [pokemons, setPokemons] = useState([]);
   const [isLoading, setisLoading] = useState();
   const renderFetch = async () => {
