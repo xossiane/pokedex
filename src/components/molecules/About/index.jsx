@@ -4,6 +4,8 @@ import Back from "../../../../public/assets/Back.png"
 import ornament from "../../../../public/assets/ornament.png"
 import dotted from "../../../../public/assets/dotted.png"
 import biglogo from "../../../../public/assets/biglogo.png"
+import male from "../../../../public/assets/male.png"
+import female from "../../../../public/assets/female.png"
 import './About.scss'
 
 
@@ -41,6 +43,13 @@ function About(){
             <h2 className="About__metrics__number--weight">15.2lbs (6.9 kg)</h2>
             </div>
             </span>
+
+        <h2 className="About__breeding">Breeding</h2>
+        <h2 className="About__breeding__gender--text">Gender</h2>
+        <h2 className="About__breeding__gender--male"><img className="About__breeding__gender--maleimg" src={male} />87.5% </h2>
+        <h2 className="About__breeding__gender--female"><img className="About__breeding__gender--femaleimg" src={female} />12.5% </h2>
+        <h2 className="About__breeding__gender--textEggGroup">Egg Groups</h2> <h2 className="About__breeding__gender--textMonster">Monster</h2>
+        <h2 className="About__breeding__gender--textEggCycle">Egg Cycle</h2> <h2 className="About__breeding__gender--textGrass">Grass</h2>
         </div>
           
         </div>
