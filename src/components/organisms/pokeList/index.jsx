@@ -1,62 +1,43 @@
 import { useState, useEffect, useCallback } from "react";
-import '../../molecules/pokemonCard/pokemonCard.scss'
-import { pokemonList } from "../../../services/pokemonList";
+import "../../molecules/pokemonCard/pokemonCard.scss";
+import { fetchPokemon } from "../../../services/fetchPokemon";
+import { getPokemon } from "../../../services/getPokemon";
+import "./index.scss";
 
 import PokeCard from "../../molecules/pokemonCard";
 
 const PokeList = ({pokemonslist}) => {
   const [pokemons, setPokemons] = useState([]);
+  const [isLoading, setisLoading] = useState();
+  const renderFetch = async () => {
+    setisLoading(true);
+    const data = await fetchPokemon();
 
-  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/?limit=151");
-  console.log('brincando com props', pokemonslist)
-  // console.log(pokemons);
+    const pokemonList = await getPokemon(data.results);
+
+    setPokemons(pokemonList);
+    setisLoading(false);
+  };
 
   useEffect(() => {
-    const fetchPokemon = async () => {
-      const res = await fetch(url);
-      const response = await res.json();
-      // console.log(response.results);
-      getPokemon(response.results);
-    };
-
-    const getPokemon = async (res) => {
-      // const pokemonData = [];
-
-      res.forEach(async (item) => {
-        const result = await fetch(
-          `https://pokeapi.co/api/v2/pokemon/${item.name}`
-        );
-
-        const dat = await result.json();
-        // console.log(dat);
-        // pokemonData.push(dat);
-        setPokemons(prev => [...prev, dat])
-      });
-
-      // console.log(pokemons)
-
-      // const names = [{ name: "kenji" }, { name: "josi" }];
-      // setPokemons(names);
-    };
-    
-    fetchPokemon();
+    renderFetch();
   }, []);
+
 
   return (
     <div className="PokeCard">
-      <>{pokemons.map((el) => (
-        <PokeCard 
-        
-        name={el.name} 
-        type={el.types} 
-        // type2={el.types[1].type.name}
-        img={el.sprites.other.dream_world.front_default}
-        id={el.id}
-        />
-      ))}
-      
-      </>
-      </div>
+     
+       {!isLoading && pokemons.map((el) => (
+          <PokeCard
+            key={el.id}
+            name={el.name}
+            type={el.types}
+            img={el.sprites.other.dream_world.front_default}
+            id={el.id}
+          />
+        ))}
+        {isLoading && <div className="PokeCard__loader">Loading... Please Wait!</div>}
+    </div>
   );
 };
 

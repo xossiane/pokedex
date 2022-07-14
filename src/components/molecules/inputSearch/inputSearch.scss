@@ -1,30 +1,27 @@
-@use '/public/styles/variables' as *;
-
+@use "/public/styles/variables" as *;
 
 .searchSection {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__title {
-      width: 316px;
-      margin-top: 117px;
-      font-size: 1.87rem;
-      margin-bottom: 40px;
-      font-family: $font;
-      @media screen {
-        @media (min-width:$tablet){
-          justify-content: center;
-          width: 500px;
-          height: 150px;
-          display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    width: 316px;
+    margin-top: 117px;
+    font-size: 1.87rem;
+    margin-bottom: 40px;
+    font-family: $font;
+    @media screen {
+      @media (min-width: $tablet) {
+        justify-content: center;
+        width: 500px;
+        height: 150px;
+        display: flex;
       }
-          
-        }
-      }
+    }
   }
-
+}
 
 .searchSection__input {
   width: 324px;
@@ -40,12 +37,12 @@
   margin-bottom: 42px;
   padding-left: 54px;
   @media screen {
-    @media (min-width:$tablet){
+    @media (min-width: $tablet) {
       width: 673px;
     }
-  }};
-  
+  }
+}
+
 img {
   position: absolute;
 }
-

@@ -1,29 +1,37 @@
-@use '/public/styles/variables' as *;
+@use "/public/styles/variables" as *;
 
-.PokeList{
-    align-content: center;
-    &__arrow{
-        margin-left: 40px;
-        margin-bottom: -41px;
-        position: relative;
-    }
-    &__title{
-        width: 316px;
-        margin-top: 80px;
-        font-size: 1.87rem;
-        margin-bottom: 40px;
-        font-family: $font;
-        font-weight: 600px;
-        margin-left: 50px;}
-    &__list{
-        position: absolute;
-        right: 30px;
-        top: 55px;       
-    }
-    &__logo{
-        display: flex;
-        top: 0;
-        right: 0;
-        position: absolute;
-    }}
+.PokeList {
+  align-content: center;
+  &__arrow {
+    margin-left: 40px;
+    margin-bottom: -41px;
+    position: relative;
+  }
+  &__title {
+    width: 316px;
+    margin-top: 80px;
+    font-size: 1.87rem;
+    margin-bottom: 40px;
+    font-family: $font;
+    font-weight: 600px;
+    margin-left: 50px;
+  }
+  &__list {
+    position: absolute;
+    right: 30px;
+    top: 55px;
+  }
+  &__logo {
+    display: flex;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.PokeList__cards{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 

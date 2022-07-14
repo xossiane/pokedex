@@ -139,7 +139,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 68%;
-        margin: auto;
+        
+        align-items: center;
+        justify-content: center;
         @media screen {
             @media (min-width:$tablet){
                 grid-template-columns: repeat(3, 1fr);
@@ -149,5 +151,8 @@
             @media (min-width:$desktop){
                 grid-template-columns: repeat(4, 1fr);
                 max-width: 800px;
+            }
+            @media(max-width: 510px ){
+                column-gap: 15px;
             }
     }}
