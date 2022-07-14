@@ -23,6 +23,7 @@ function App() {
       <Route path="/about">
         <About />
       </Route>
+      
       </Switch>
     </>
   );
