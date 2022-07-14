@@ -8,6 +8,10 @@ const InputSearch = () => {
   const [pokedata, setPokedata] = useState();
 
   const handleOnKeyPress = async (e) => {
+
+    if (search.trim().length === 0){
+      return
+    }
     if (e.key === "Enter") {
       const data = await PokemonSearch(search.toLocaleLowerCase());
       setPokedata(data);
