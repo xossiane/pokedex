@@ -6,6 +6,7 @@ import dotted from "../../../../public/assets/dotted.png"
 import biglogo from "../../../../public/assets/biglogo.png"
 import male from "../../../../public/assets/male.png"
 import female from "../../../../public/assets/female.png"
+import love from "../../../../public/assets/love.png"
 import './About.scss'
 
 
@@ -20,6 +21,7 @@ function About(){
         <img src={biglogo} className="AboutPage__logo" />
         <h2 className="About__title">Bulbasaur</h2>
         <h2 className="About__id">#001</h2>
+        <img src={love} className="AboutPage__love" />
         <div className="About__tag">
         <PokeTag text={"Grass"} className="__typeone"></PokeTag>
         <PokeTag text={"Poison"} className="__typetwo"></PokeTag>
