@@ -1,10 +1,10 @@
 import PokeList from "../../organisms/pokeList"
 import './PokeCard.scss'
-import logo from "../../../../public/assets/logo.png"
-import arrow from "../../../../public/assets/arrow.png"
-import list from "../../../../public/assets/list.png"
-import pikachu1 from "../../../../public/assets/pikachu1.png"
-import pikachu2 from "../../../../public/assets/pikachu2.png"
+import logo from "/assets/logo.png"
+import arrow from "/assets/arrow.png"
+import list from "/assets/list.png"
+import pikachu1 from "/assets/pikachu1.png"
+import pikachu2 from "/assets/pikachu2.png"
 
 import { Link } from "react-router-dom"
 

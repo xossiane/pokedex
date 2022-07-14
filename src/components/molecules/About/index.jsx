@@ -1,12 +1,12 @@
-import Bulba from "../../../../public/assets/bulba.png"
+import Bulba from "/assets/bulba.png"
 import PokeTag from "../../atoms/PokeTag"
-import Back from "../../../../public/assets/Back.png"
-import ornament from "../../../../public/assets/ornament.png"
-import dotted from "../../../../public/assets/dotted.png"
+import Back from "/assets/Back.png"
+import ornament from "/assets/ornament.png"
+import dotted from "/assets/dotted.png"
 
-import male from "../../../../public/assets/male.png"
-import female from "../../../../public/assets/female.png"
-import love from "../../../../public/assets/love.png"
+import male from "/assets/male.png"
+import female from "/assets/female.png"
+import love from "/assets/love.png"
 import { Link } from "react-router-dom";
 
 import './About.scss'
