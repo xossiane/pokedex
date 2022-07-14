@@ -31,14 +31,16 @@ function About(){
         <PokeTag text={"Moves"} className="--moves"></PokeTag>
         </div>
         <h2 className="About__description">Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger. </h2>
+        <span className="About__metrics">
         <div className="About__metrics__title">
-            <h2 className="About__metrics__title__height">Height</h2>
-            <h2 className="About__metrics__title__weight">Weight</h2>
+            <h2 className="About__metrics__title--height">Height</h2>
+            <h2 className="About__metrics__title--weight">Weight</h2>
         </div>
         <div className="About__metrics__number">
-            <h2 className="About__metrics__number">2'3.6" (0.70cm)</h2>
-            <h2 className="About__metrics__number">15.2lbs (6.9 kg)</h2>
+            <h2 className="About__metrics__number--height">2'3.6" (0.70cm)</h2>
+            <h2 className="About__metrics__number--weight">15.2lbs (6.9 kg)</h2>
             </div>
+            </span>
         </div>
           
         </div>

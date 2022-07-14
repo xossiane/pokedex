@@ -32,17 +32,32 @@
     }
     &__metrics{
         display: flex;
-        flex-direction: row;
-        &
+        flex-direction: column;
+        align-items: center;
+        background-color: $white;
+        
         &__title{
             display: flex;
             flex-direction: row;
-            &__number{
-                flex-direction: column;
+            font-family: $font;
+            font-size: 10px;
+            align-items: flex-start;
+            opacity: 0.2;
             }
-        }};
+            &--height{
+                margin-left: 121px;
+            }
+        &__number{
+            flex-direction: row;
+            display: flex;
+            font-family: $font;
+            font-size: 10px;
+            &--height{
+                margin-right: 70px;
+            }}}
     
     };
+
 
 .About__container__info{
     height: 50vh;
@@ -82,7 +97,6 @@
 
 .About__img{
     display: flex;
-    bottom: 3px;
     z-index: 1;
     position: absolute;
     top: -170px;
