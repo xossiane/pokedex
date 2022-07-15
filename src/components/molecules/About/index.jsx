@@ -1,9 +1,15 @@
-import Bulba from "../../../../public/assets/bulba.png"
+import Bulba from "/assets/bulba.png"
 import PokeTag from "../../atoms/PokeTag"
-import Back from "../../../../public/assets/Back.png"
-import ornament from "../../../../public/assets/ornament.png"
-import dotted from "../../../../public/assets/dotted.png"
-import biglogo from "../../../../public/assets/biglogo.png"
+import Back from "/assets/Back.png"
+import ornament from "/assets/ornament.png"
+import dotted from "/assets/dotted.png"
+import male from "/assets/male.png"
+import female from "/assets/female.png"
+import love from "/assets/love.png"
+
+
+import { Link } from "react-router-dom";
+
 import './About.scss'
 
 
@@ -12,12 +18,14 @@ function About(){
     return (
     <div className="About__container">
         <div className="About__container--color">
+        <Link className="AboutPage__back--link" to="/list">
         <img src={Back} className="AboutPage__back" />
+        </Link>
         <img src={ornament} className="AboutPage__ornament" />
         <img src={dotted} className="AboutPage__dotted" />
-        <img src={biglogo} className="AboutPage__logo" />
         <h2 className="About__title">Bulbasaur</h2>
         <h2 className="About__id">#001</h2>
+        <img src={love} className="AboutPage__love" />
         <div className="About__tag">
         <PokeTag text={"Grass"} className="__typeone"></PokeTag>
         <PokeTag text={"Poison"} className="__typetwo"></PokeTag>
@@ -41,6 +49,13 @@ function About(){
             <h2 className="About__metrics__number--weight">15.2lbs (6.9 kg)</h2>
             </div>
             </span>
+
+        <h2 className="About__breeding">Breeding</h2>
+        <h2 className="About__breeding__gender--text">Gender</h2>
+        <h2 className="About__breeding__gender--male"><img className="About__breeding__gender--maleimg" src={male} />87.5% </h2>
+        <h2 className="About__breeding__gender--female"><img className="About__breeding__gender--femaleimg" src={female} />12.5% </h2>
+        <h2 className="About__breeding__gender--textEggGroup">Egg Groups</h2> <h2 className="About__breeding__gender--textMonster">Monster</h2>
+        <h2 className="About__breeding__gender--textEggCycle">Egg Cycle</h2> <h2 className="About__breeding__gender--textGrass">Grass</h2>
         </div>
           
         </div>

@@ -6,7 +6,7 @@ const PokeCard = ({ id, name, img, type }) => {
   if (type.length === 0) {
     return <p>teste</p>;
   }
-  const style = `pokeCard__type__${type[0].type.name} pokeCard__type`;
+  const style = `pokeCard__type--${type[0].type.name} pokeCard__type`;
 
   return (
     <div className={style}>

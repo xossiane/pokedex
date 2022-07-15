@@ -7,49 +7,49 @@
     position: relative;
     margin-bottom: 15px;
     display: flex;
-        &__fire{
+        &--fire{
             background-color: $fire;
         }
-        &__water{
+        &--water{
             background-color: $water;
         }
-        &__electric{
+        &--electric{
             background-color: $electric;
         }
-        &__grass{
+        &--grass{
             background-color: $grass;
         }
-        &__bug{
+        &--bug{
             background-color: $bug;
         }
-        &__normal{
+        &--normal{
             background-color: $normal;
         }
-        &__poison{
+        &--poison{
             background-color: $poison;
         }
-        &__ground{
+        &--ground{
             background-color: $ground;
         }
-        &__fairy{
+        &--fairy{
             background-color: $fairy;
         }
-        &__fighting{
+        &--fighting{
             background-color: $fighting;
         }
-        &__psychic{
+        &--psychic{
             background-color: $psychic;
         }
-        &__rock{
+        &--rock{
             background-color: $rock;
         }
-        &__ghost{
+        &--ghost{
             background-color: $ghost;
         }
-        &__ice{
+        &--ice{
             background-color: $ice;
         }
-        &__dragon{
+        &--dragon{
             background-color: $dragon;
         }
         &__id{
