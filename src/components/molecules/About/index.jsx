@@ -3,10 +3,11 @@ import PokeTag from "../../atoms/PokeTag"
 import Back from "/assets/Back.png"
 import ornament from "/assets/ornament.png"
 import dotted from "/assets/dotted.png"
-
 import male from "/assets/male.png"
 import female from "/assets/female.png"
 import love from "/assets/love.png"
+
+
 import { Link } from "react-router-dom";
 
 import './About.scss'
@@ -17,7 +18,7 @@ function About(){
     return (
     <div className="About__container">
         <div className="About__container--color">
-        <Link className="AboutPage__back--list" to="/">
+        <Link className="AboutPage__back--link" to="/list">
         <img src={Back} className="AboutPage__back" />
         </Link>
         <img src={ornament} className="AboutPage__ornament" />

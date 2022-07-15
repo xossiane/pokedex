@@ -1,7 +1,6 @@
 @use '/public/styles/variables' as *;
 
 .About__container{
-    
     background-color: $grass;
     height: 100vh;
     width: 100vw;
@@ -202,6 +201,7 @@
     margin-top: 60px;
     margin-left: 25px;
 }
+
 .AboutPage__ornament{
     display: flex;
     opacity: 80%;}
