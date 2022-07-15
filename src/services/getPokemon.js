@@ -1,5 +1,5 @@
 export const getPokemon = async (res) => {
-  const pokemonData = [];
+  const pokemonData = []; //mapeia cada pokemon unitario
   for (let k in res) {
     const result = await fetch(
       `https://pokeapi.co/api/v2/pokemon/${res[k].name}`

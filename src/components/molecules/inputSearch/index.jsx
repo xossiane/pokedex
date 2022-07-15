@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import PokemonSearch from "../../../services/PokemonSearch";
 import PokeCard from "../../../components/molecules/pokemonCard";
 import "./inputSearch.scss";
