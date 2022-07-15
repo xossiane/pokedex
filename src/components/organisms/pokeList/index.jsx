@@ -7,20 +7,20 @@ import "./index.scss";
 import PokeCard from "../../molecules/pokemonCard";
 
 const PokeList = ({pokemonslist}) => {
-  const [pokemons, setPokemons] = useState([]);
+  const [pokemons, setPokemons] = useState([]); 
   const [isLoading, setisLoading] = useState();
   const renderFetch = async () => {
     setisLoading(true);
     const data = await fetchPokemon();
 
-    const pokemonList = await getPokemon(data.results);
+    const pokemonList = await getPokemon(data.results); //pega o valor que a fetchPokemon fornece
 
-    setPokemons(pokemonList);
+    setPokemons(pokemonList); //armazena os valores na pokemonlist dentro do estado 
     setisLoading(false);
   };
 
   useEffect(() => {
-    renderFetch();
+    renderFetch(); //executa só uma vez a renderizaçao dos pokemons
   }, []);
 
 

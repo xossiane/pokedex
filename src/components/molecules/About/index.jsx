@@ -8,19 +8,22 @@ import female from "/assets/female.png"
 import love from "/assets/love.png"
 
 
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import './About.scss'
 
 
 function About(){
+   let history = useHistory();
+   const HandleOnClick = () => {history.push("/list")
+    console.log('oi')};
    
     return (
     <div className="About__container">
         <div className="About__container--color">
-        <Link className="AboutPage__back--link" to="/list">
-        <img src={Back} className="AboutPage__back" />
-        </Link>
+        <button  className="AboutPage__back--link" onClick={HandleOnClick}>
+        <img src={Back} className="AboutPage__back"  />
+        </button>
         <img src={ornament} className="AboutPage__ornament" />
         <img src={dotted} className="AboutPage__dotted" />
         <h2 className="About__title">Bulbasaur</h2>
